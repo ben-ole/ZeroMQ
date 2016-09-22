@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_C7, ______Target_ZeroMQ, ______Target_ZeroMQTests);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_,  Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        _______Group_C7 = {
+            isa = PBXGroup;
+            name = 'C7';
+            path = 'Packages/C7-0.12.1/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncConnection.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncDrain.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncHost.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncStream.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncURIConnection.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/Byte.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/C7.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/CaseInsensitiveString.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/Closable.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/Connection.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/CustomDataStore.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/Data.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/Drain.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/Host.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/JSON.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/Number.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/Stream.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/StreamError.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/StreamSequence.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/StructuredData.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/Time.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/URI.swift', '__PBXFileRef_Packages/C7-0.12.1/Sources/URIConnection.swift');
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncConnection.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'AsyncConnection.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncDrain.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'AsyncDrain.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncHost.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'AsyncHost.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncStream.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'AsyncStream.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncURIConnection.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'AsyncURIConnection.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/Byte.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Byte.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/C7.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'C7.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/CaseInsensitiveString.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'CaseInsensitiveString.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/Closable.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Closable.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/Connection.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Connection.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/CustomDataStore.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'CustomDataStore.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/Data.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Data.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/Drain.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Drain.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/Host.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Host.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/JSON.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'JSON.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/Number.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Number.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/Stream.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Stream.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/StreamError.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'StreamError.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/StreamSequence.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'StreamSequence.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/StructuredData.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'StructuredData.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/Time.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Time.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/URI.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'URI.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.12.1/Sources/URIConnection.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'URIConnection.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_C7 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_C7;
+            buildPhases = (CompilePhase_C7, ___LinkPhase_C7);
+            buildRules = ();
+            dependencies = ();
+            name = 'C7';
+            productName = C7;
+            productReference = _____Product_C7;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_C7 = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'C7.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_C7 = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/C7-0.12.1/Sources/AsyncConnection.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/AsyncDrain.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/AsyncHost.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/AsyncStream.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/AsyncURIConnection.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/Byte.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/C7.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/CaseInsensitiveString.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/Closable.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/Connection.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/CustomDataStore.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/Data.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/Drain.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/Host.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/JSON.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/Number.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/Stream.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/StreamError.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/StreamSequence.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/StructuredData.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/Time.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/URI.swift', '__src_cc_ref_Packages/C7-0.12.1/Sources/URIConnection.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/AsyncConnection.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncConnection.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/AsyncDrain.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncDrain.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/AsyncHost.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncHost.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/AsyncStream.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncStream.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/AsyncURIConnection.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/AsyncURIConnection.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/Byte.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/Byte.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/C7.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/C7.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/CaseInsensitiveString.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/CaseInsensitiveString.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/Closable.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/Closable.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/Connection.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/Connection.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/CustomDataStore.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/CustomDataStore.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/Data.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/Data.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/Drain.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/Drain.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/Host.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/Host.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/JSON.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/JSON.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/Number.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/Number.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/Stream.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/Stream.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/StreamError.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/StreamError.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/StreamSequence.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/StreamSequence.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/StructuredData.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/StructuredData.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/Time.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/Time.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/URI.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/URI.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.12.1/Sources/URIConnection.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.12.1/Sources/URIConnection.swift';
+        };
+        ___LinkPhase_C7 = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_C7 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_C7, _ReleaseConf_C7);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_C7 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'ZeroMQ.xcodeproj/C7_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'C7'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_C7 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'ZeroMQ.xcodeproj/C7_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'C7'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_C7 = {
+            isa = PBXTargetDependency;
+            target = ______Target_C7;
+        };
+        _______Group_ZeroMQ = {
+            isa = PBXGroup;
+            name = 'ZeroMQ';
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/Context.swift', '__PBXFileRef_Sources/CURVE.swift', '__PBXFileRef_Sources/Error.swift', '__PBXFileRef_Sources/Message.swift', '__PBXFileRef_Sources/Poller.swift', '__PBXFileRef_Sources/Proxy.swift', '__PBXFileRef_Sources/Socket.swift');
+        };
+        '__PBXFileRef_Sources/Context.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Context.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/CURVE.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'CURVE.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Error.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Error.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Message.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Message.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Poller.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Poller.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Proxy.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Proxy.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Socket.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'Socket.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_ZeroMQ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_ZeroMQ;
+            buildPhases = (CompilePhase_ZeroMQ, ___LinkPhase_ZeroMQ);
+            buildRules = ();
+            dependencies = (__Dependency_C7);
+            name = 'ZeroMQ';
+            productName = ZeroMQ;
+            productReference = _____Product_ZeroMQ;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_ZeroMQ = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'ZeroMQ.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_ZeroMQ = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/Context.swift', '__src_cc_ref_Sources/CURVE.swift', '__src_cc_ref_Sources/Error.swift', '__src_cc_ref_Sources/Message.swift', '__src_cc_ref_Sources/Poller.swift', '__src_cc_ref_Sources/Proxy.swift', '__src_cc_ref_Sources/Socket.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/Context.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Context.swift';
+        };
+        '__src_cc_ref_Sources/CURVE.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/CURVE.swift';
+        };
+        '__src_cc_ref_Sources/Error.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Error.swift';
+        };
+        '__src_cc_ref_Sources/Message.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Message.swift';
+        };
+        '__src_cc_ref_Sources/Poller.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Poller.swift';
+        };
+        '__src_cc_ref_Sources/Proxy.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Proxy.swift';
+        };
+        '__src_cc_ref_Sources/Socket.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Socket.swift';
+        };
+        ___LinkPhase_ZeroMQ = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_C7_via_ZeroMQ);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_C7_via_ZeroMQ = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_C7;
+        };
+        _______Confs_ZeroMQ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_ZeroMQ, _ReleaseConf_ZeroMQ);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_ZeroMQ = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited) -I/usr/local/include'; INFOPLIST_FILE = 'ZeroMQ.xcodeproj/ZeroMQ_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; HEADER_SEARCH_PATHS = '/Users/Benjamin/Desktop/ZeroMQ/Packages/CZeroMQ-1.0.3'; PRODUCT_BUNDLE_IDENTIFIER = 'ZeroMQ'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited) -L/usr/local/lib -lzmq'; };
+            name = Debug;
+        };
+        _ReleaseConf_ZeroMQ = {
+            isa = XCBuildConfiguration;
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited) -I/usr/local/include'; INFOPLIST_FILE = 'ZeroMQ.xcodeproj/ZeroMQ_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Benjamin/Desktop/ZeroMQ/Packages/CZeroMQ-1.0.3'; PRODUCT_BUNDLE_IDENTIFIER = 'ZeroMQ'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited) -L/usr/local/lib -lzmq'; };
+            name = Release;
+        };
+        __Dependency_ZeroMQ = {
+            isa = PBXTargetDependency;
+            target = ______Target_ZeroMQ;
+        };
+        _______Group_ZeroMQTests = {
+            isa = PBXGroup;
+            name = 'ZeroMQTests';
+            path = 'Tests/ZeroMQTests';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/ZeroMQTests/ZeroMQTests.swift');
+        };
+        '__PBXFileRef_Tests/ZeroMQTests/ZeroMQTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            path = 'ZeroMQTests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_ZeroMQTests = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_ZeroMQTests;
+            buildPhases = (CompilePhase_ZeroMQTests, ___LinkPhase_ZeroMQTests);
+            buildRules = ();
+            dependencies = (__Dependency_C7, __Dependency_ZeroMQ);
+            name = 'ZeroMQTests';
+            productName = ZeroMQTests;
+            productReference = _____Product_ZeroMQTests;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_ZeroMQTests = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'ZeroMQTests.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_ZeroMQTests = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/ZeroMQTests/ZeroMQTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/ZeroMQTests/ZeroMQTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/ZeroMQTests/ZeroMQTests.swift';
+        };
+        ___LinkPhase_ZeroMQTests = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_C7_via_ZeroMQTests, _LinkFileRef_ZeroMQ_via_ZeroMQTests);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_C7_via_ZeroMQTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_C7;
+        };
+        _LinkFileRef_ZeroMQ_via_ZeroMQTests = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_ZeroMQ;
+        };
+        _______Confs_ZeroMQTests = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_ZeroMQTests, _ReleaseConf_ZeroMQTests);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_ZeroMQTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Benjamin/Desktop/ZeroMQ/Packages/CZeroMQ-1.0.3'; OTHER_SWIFT_FLAGS = '$(inherited) -I/usr/local/include'; INFOPLIST_FILE = 'ZeroMQ.xcodeproj/ZeroMQTests_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited) -L/usr/local/lib -lzmq'; SWIFT_VERSION = '3.0'; };
+            name = Debug;
+        };
+        _ReleaseConf_ZeroMQTests = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Benjamin/Desktop/ZeroMQ/Packages/CZeroMQ-1.0.3'; OTHER_SWIFT_FLAGS = '$(inherited) -I/usr/local/include'; INFOPLIST_FILE = 'ZeroMQ.xcodeproj/ZeroMQTests_Info.plist'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited) -L/usr/local/lib -lzmq'; SWIFT_VERSION = '3.0'; };
+            name = Release;
+        };
+        __Dependency_ZeroMQTests = {
+            isa = PBXTargetDependency;
+            target = ______Target_ZeroMQTests;
+        };
+        '__PBXFileRef_ZeroMQ.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            path = 'ZeroMQ.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_ZeroMQ.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_C7, _______Group_ZeroMQ);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        Dependencies_ = {
+            isa = PBXGroup;
+            children = (_______Group_C7);
+            name = Dependencies;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_ZeroMQTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_ZeroMQTests);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_C7, _____Product_ZeroMQ);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_ZeroMQ.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_ZeroMQ.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}

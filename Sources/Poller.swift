@@ -38,26 +38,26 @@ public struct PollEvent : OptionSet {
 }
 
 public enum PollItemEvent {
-    case Socket(socket: UnsafeMutablePointer<Void>, events: PollEvent)
+    case Socket(socket: UnsafeMutableRawPointer, events: PollEvent)
     case FileDescriptor(fileDescriptor: Int32, events: PollEvent)
 
     var pollItem: zmq_pollitem_t {
         switch self {
-        case Socket(let socket, let events):
+        case .Socket(let socket, let events):
             return zmq_pollitem_t(socket: socket, fd: 0, events: events.rawValue, revents: 0)
-        case FileDescriptor(let fileDescriptor, let events):
+        case .FileDescriptor(let fileDescriptor, let events):
             return zmq_pollitem_t(socket: nil, fd: fileDescriptor, events: events.rawValue, revents: 0)
         }
     }
 
     init(pollItem: zmq_pollitem_t) {
         if pollItem.socket != nil {
-            self = Socket(
+            self = .Socket(
                 socket: pollItem.socket,
                 events: PollEvent(rawValue: pollItem.revents)
             )
         } else {
-            self = FileDescriptor(
+            self = .FileDescriptor(
                 fileDescriptor: pollItem.fd,
                 events: PollEvent(rawValue: pollItem.revents)
             )
@@ -69,7 +69,7 @@ public func poll(_ items: PollItemEvent..., timeout: Int) throws -> [PollItemEve
     var pollItems = items.map { $0.pollItem }
 
     if zmq_poll(&pollItems, Int32(pollItems.count), timeout) == -1 {
-        throw Error.lastError
+        throw ZeroError.lastError
     }
 
     return pollItems.map(PollItemEvent.init)

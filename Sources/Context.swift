@@ -44,18 +44,18 @@ public enum SocketType {
 extension SocketType {
     init?(rawValue: Int32) {
         switch rawValue {
-        case ZMQ_REQ:    self = Req
-        case ZMQ_REP:    self = Rep
-        case ZMQ_DEALER: self = Dealer
-        case ZMQ_ROUTER: self = Router
-        case ZMQ_PUB:    self = Pub
-        case ZMQ_SUB:    self = Sub
-        case ZMQ_XPUB:   self = XPub
-        case ZMQ_XSUB:   self = XSub
-        case ZMQ_PUSH:   self = Push
-        case ZMQ_PULL:   self = Pull
-        case ZMQ_PAIR:   self = Pair
-        case ZMQ_STREAM: self = Stream
+        case ZMQ_REQ:    self = .Req
+        case ZMQ_REP:    self = .Rep
+        case ZMQ_DEALER: self = .Dealer
+        case ZMQ_ROUTER: self = .Router
+        case ZMQ_PUB:    self = .Pub
+        case ZMQ_SUB:    self = .Sub
+        case ZMQ_XPUB:   self = .XPub
+        case ZMQ_XSUB:   self = .XSub
+        case ZMQ_PUSH:   self = .Push
+        case ZMQ_PULL:   self = .Pull
+        case ZMQ_PAIR:   self = .Pair
+        case ZMQ_STREAM: self = .Stream
         // case ZMQ_SERVER: self = Server
         // case ZMQ_CLIENT: self = Client
 
@@ -86,13 +86,13 @@ extension SocketType {
 }
 
 public final class Context {
-    let context: UnsafeMutablePointer<Void>?
+    let context: UnsafeMutableRawPointer
 
     public init() throws {
         context = zmq_ctx_new()
 
         if context == nil {
-            throw Error.lastError
+            throw ZeroError.lastError
         }
     }
 
@@ -100,7 +100,7 @@ public final class Context {
         context = zmq_ctx_new()
 
         if context == nil {
-            throw Error.lastError
+            throw ZeroError.lastError
         }
 
         self.IOThreads = IOThreads
@@ -112,7 +112,7 @@ public final class Context {
 
     public func terminate() throws {
         if zmq_ctx_term(context) == -1 {
-            throw Error.lastError
+            throw ZeroError.lastError
         }
     }
 
@@ -127,7 +127,7 @@ public final class Context {
     public func socket(_ type: SocketType) throws -> Socket {
 
         guard let socket = zmq_socket(context, type.rawValue) else {
-            throw Error.lastError
+            throw ZeroError.lastError
         }
 
         return Socket(socket: socket)
